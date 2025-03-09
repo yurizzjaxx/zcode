@@ -2,7 +2,7 @@ import sys
 import pyfiglet as p
 
 def run(c):
-    if c.startWidth("text"):
+    if c.startswith("text"):
         out = p.figlet_format(c, font = 'isometric1')  
         print(out)
     else:
