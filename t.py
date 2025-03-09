@@ -10,7 +10,7 @@ def run(c):
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        run(sys)
+        run(" ".join(sys.argv[1:]))
     else:
         edit = input("text command: ")
         run(edit)
