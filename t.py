@@ -2,7 +2,7 @@ import sys
 import pyfiglet as p
 
 def run(c):
-    if c.startswith("text"):
+    if c.startswith("/aci"):
         out = p.figlet_format(c, font = 'isometric1')  
         print(out)
     else:
@@ -10,7 +10,7 @@ def run(c):
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        run(" ".join(sys.argv[1:]))
+        run(sys)
     else:
-        edit = input("text input: ")
+        edit = input("text command: ")
         run(edit)
