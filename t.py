@@ -1,11 +1,12 @@
 import sys
+import pyfiglet as p
 
 def run(c):
     if c.startWidth("text"):
-        print("Executing code 2 command")
-        # Add your command logic here
+        out = p.figlet_format(c, font = 'isometric1')  
+        print(out)
     else:
-        print(f'{c} error code')
+        print(f'{c} error blank text')
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
